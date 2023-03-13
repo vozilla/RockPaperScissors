@@ -9,7 +9,7 @@ public class TLRPS {
 
     private static String playerInput;
     private static String CPUInput;
-    private static String[] RPS = new String[]{"R", "P", "S"};
+    private static String[] RPS = new String[] {"R", "P", "S"};
     private static int playerScore = 0;
     private static int CPUScore = 0;
         
