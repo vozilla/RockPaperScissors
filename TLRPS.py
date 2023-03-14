@@ -5,7 +5,7 @@
 
 import random
 
-RPS = ['Rock', 'Paper', 'Scissors']
+RPS = ['r', 'p', 's']
 playerScore = 0
 CPUScore = 0
 menuLoop = True
@@ -39,38 +39,38 @@ while menuLoop is True:
 
 # game loop
 while gameCheck is True:
-    CPU = random.RPS(RPS)
+    CPUInput = random.RPS(RPS)
     if playerInput == CPU:
         print("\It's a draw!")
-        print("We both picked " + str(CPU))
+        print("We both picked " + str(CPUInput))
 
-    elif(playerInput == 'r' and CPU == 's'):
-        print("\nPlayer Wins")
+    elif(playerInput == 'r' and CPUInput == 's'):
+        print("\nYou win.")
         print("You Picked: Rock, CPU Picked: Scissors")
         playerScore += 1
 
-    elif(playerInput == 'p' and CPU == 'r'):
-        print("\nPlayer Wins")
+    elif(playerInput == 'p' and CPUInput == 'r'):
+        print("\nYou win.")
         print("You Picked: Paper, CPU Picked: Rock")
         playerScore += 1
 
-    elif(playerInput == 's' and CPU == 'p'):
-        print("\nPlayer Wins")
+    elif(playerInput == 's' and CPUInput == 'p'):
+        print("\nYou win.")
         print("You Picked: Scissors, CPU Picked: Paper")
         playerScore+=1
 
-    elif(CPU == 'r' and playerInput == 's'):
-        print("\nCPU Wins")
+    elif(CPUInput == 'r' and playerInput == 's'):
+        print("\nI win.")
         print("You Picked: Rock, CPU Picked: Scissors")
         CPUScore += 1
 
-    elif(CPU == 'p' and playerInput == 'r'):
-        print("\nCPU Wins")
+    elif(CPUInput == 'p' and playerInput == 'r'):
+        print("\nI win.")
         print("You Picked: Paper, CPU Picked: Rock")
         CPUScore += 1
 
-    elif(CPU == 's' and playerInput == 'p'):
-        print("\nCPU Wins")
+    elif(CPUInput == 's' and playerInput == 'p'):
+        print("\nI win.")
         print("You Picked: Scissors, CPU Picked: Paper")
         CPUScore += 1
 
