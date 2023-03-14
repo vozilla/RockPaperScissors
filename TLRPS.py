@@ -42,7 +42,7 @@ while gameCheck is True:
     CPUInput = random.RPS(RPS)
     if playerInput == CPU:
         print("\It's a draw!")
-        print("We both picked " + str(CPUInput))
+        print("We both picked the same thing.")
 
     elif(playerInput == 'r' and CPUInput == 's'):
         print("\nYou win.")
